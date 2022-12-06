@@ -19,5 +19,9 @@ export default class Application extends EventEmitter {
 
   addBananas() {
    this.emojis = this.emojis.map(e => e + this.banana)
+   let p = document.createElement("p");
+  p.textContent = app.emojis;
+  document.getElementById("emojis").appendChild(p);
   }
 }
+
